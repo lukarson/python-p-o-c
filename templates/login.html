@@ -4,7 +4,7 @@
 		<form method="POST" action="">
 			{{ form.hidden_tag() }}
 			<fieldset class="form-group">
-				<legend class="border-bottom mb-4">Dane albo w ryj</legend>
+				<legend class="border-bottom mb-4">Zaloguj się</legend>
 				
 				<div class="form-group">
 					{{ form.email.label(class="form-control-label") }}
@@ -45,7 +45,7 @@
 	</div>
 	<div class="border-top pt-3">
 		<small class="text-muted">
-			A konto mamy? <a class="ml-2" href="{{ url_for('register') }}">Jak nie to Sajn Ap</a>
+			Nie masz konta? <a class="ml-2" href="{{ url_for('register') }}">Zarejestruj się!</a>
 		</small>
 	</div>
 {% endblock content %}
